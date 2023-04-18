@@ -1,6 +1,21 @@
 # my_bash
 Полезные скрипты
 
+```make
+serve:
+	python -m http.server dist --bind $(bind) $(port)
+ #####################################
+Запускаем с параметрами:
+
+$ make serve bind=localhost port=3000
+##############################
+Можно указать значения по умолчанию:
+bind ?= localhost
+port ?= 3000
+serve:
+	python -m http.server dist --bind $(bind) $(port)
+```
+
 
 Зайти в каждую папку, прочесть все файлы info и перенаправить вывод в один файл.
 
