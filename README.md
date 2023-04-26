@@ -43,3 +43,14 @@ serve:
 git fetch --all # скопировать все изменения с удалённого репозитория
 git fetch --prune # оббновить ссылки на ветки
 ```
+
+
+### алиасы для bash
+```bash
+vim ~/.bashrc
+alias djmigrate='python manage.py migrate'
+alias djmakemigrations='python manage.py makemigrations'
+alias djtest='python manage.py test'
+source ~/.bashrc
+```
+
