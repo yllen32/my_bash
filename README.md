@@ -53,4 +53,8 @@ alias djmakemigrations='python manage.py makemigrations'
 alias djtest='python manage.py test'
 source ~/.bashrc
 ```
+ ### SSH тунелирование
+```ssh
+ssh -L 9998:localhost:15672 -p 2223 user@server -N # можно еще -f для запуска в бэкграунде
+```
 
