@@ -51,6 +51,7 @@ vim ~/.bashrc
 alias djmigrate='python manage.py migrate'
 alias djmakemigrations='python manage.py makemigrations'
 alias djtest='python manage.py test'
+alias pg='ps aux | grep -v grep | grep $1' # -v grep для удаления процесса самого grep
 source ~/.bashrc
 ```
  ### SSH тунелирование
