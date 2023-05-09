@@ -1,0 +1,5 @@
+alias djmakemigrations="python manage.py makemigrations"
+alias djmigrate="python manage.py migrate"
+alias djtest="python manage.py test"
+alias dj="python manage.py"
+alias pg='ps auxw | grep -v grep | grep $1'
