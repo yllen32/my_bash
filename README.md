@@ -44,16 +44,6 @@ git fetch --all # скопировать все изменения с удалё
 git fetch --prune # оббновить ссылки на ветки
 ```
 
-
-### алиасы для bash
-```bash
-vim ~/.bashrc
-alias djmigrate='python manage.py migrate'
-alias djmakemigrations='python manage.py makemigrations'
-alias djtest='python manage.py test'
-alias pg='ps aux | grep -v grep | grep $1' # -v grep для удаления процесса самого grep
-source ~/.bashrc
-```
  ### SSH тунелирование
 ```ssh
 ssh -L 9998:localhost:15672 -p 2223 user@server -N # можно еще -f для запуска в бэкграунде
