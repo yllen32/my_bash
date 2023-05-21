@@ -62,3 +62,7 @@ vim -c "bufdo! set eventignore-=Syntax | :%s/текс который нужно 
 # убедись что ввел перед этим
 shopt -s globstart
 ```
+
+```sh
+cat .env | grep -E 'FLOWER_|REDIS_' > .filtered.env
+```
