@@ -66,3 +66,8 @@ shopt -s globstart
 ```sh
 cat .env | grep -E 'FLOWER_|REDIS_' > .filtered.env
 ```
+
+Удаление всех файлов миграций
+```sh
+find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+```
