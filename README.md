@@ -77,6 +77,7 @@ find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
 docker pull prologic/tube
 docker run -p 8000:8000 -v ~/data:/data prologic/tube
 # для конвертирования видео mkv
+sudo apt install ffmpeg
 ffmpeg -i ~/Django.mkv -c:v copy -c:a aac -sn ~/data/videos/django.mp4
 
 ```
