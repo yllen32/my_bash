@@ -71,3 +71,12 @@ cat .env | grep -E 'FLOWER_|REDIS_' > .filtered.env
 ```sh
 find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
 ```
+
+#Запуск видео сервера
+```sh
+docker pull prologic/tube
+docker run -p 8000:8000 -v ~/data:/data prologic/tube
+# для конвертирования видео mkv
+ffmpeg -i ~/Django.mkv -c:v copy -c:a aac -sn ~/data/videos/django.mp4
+
+```
