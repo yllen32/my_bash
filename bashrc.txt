@@ -4,3 +4,7 @@ alias djtest="python manage.py test"
 alias dj="python manage.py"
 alias pg='ps auxw | grep -v grep | grep $1'
 alias hisgr='history | grep $1'
+
+timewebkaz="ssh root@94.198.220.125"
+vpnipt="sudo openconnect --user serg.fur --servercert pin-sha256:blabla --useragent AnyConnect https://vpn.inplatlabs.ru/Dev_test_O"
+simflash="sudo resolvectl flush-caches && sudo ifconfig wg0 down"
